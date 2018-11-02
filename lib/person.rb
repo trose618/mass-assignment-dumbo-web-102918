@@ -4,8 +4,8 @@ class Person
 
   def initialize(attributes)
 
-    attributes.each do |method, value|
-      self.send(("#{method}="), value)
+    attributes.each do |key, value|
+      self.send(("#{key}="), value)
     end
   end
 
